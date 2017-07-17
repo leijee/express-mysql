@@ -1,0 +1,115 @@
+input,textarea{
+    font-family: "微软雅黑";
+}
+body{
+    /* Safari 5.1 - 6.0 */
+    background: linear-gradient(to top, #000,#555,#222 ,#000);
+
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+.header{
+    width: 100%;
+    height:100px;
+    line-height: 100px;
+    text-align: center;
+}
+.header .header-img{
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height:100%;
+
+}
+.loginForm{
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 450px;
+    height: 300px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: transparent;
+}
+.loginForm .form-tab{
+    width: 100%;
+    height:40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background: #f0f0f0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.loginForm .form-tab .tab-menu{
+    width: 50%;
+    height:40px;
+    line-height: 40px;
+    color: #00B7FF;
+    font-size: 16px;
+    text-align: center;
+    float: left;
+}
+.loginForm .form-tab .tab-menu.active{
+    color: #00B7FF;
+    background: #999;
+}
+.form-group{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #fff;
+}
+.form-group .labtext{
+    display: inline-block;
+    margin-right: 5px;
+    color: #000;
+    font-weight: 600;
+    width: 15%;
+    text-align: right;
+}
+.form-group .l-name,.form-group .l-pwd{
+    width: 70%;
+    height: 30px;
+    vertical-align: middle;
+    outline: none;
+    border: none;
+}
+.login-regist{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: underline;
+    color: blue;
+}
+.submit-btn{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #999;
+    text-align: center;
+    border: none;
+    font-size:  18px;
+    color: red;
+    margin: 0 auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-appearance: none;
+}

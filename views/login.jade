@@ -1,0 +1,63 @@
+//Created by 59245 on 2017/7/12.
+
+doctype html
+html
+    head
+        title= 登录
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+        link(rel='stylesheet',type='text/css',href='./stylesheets/style.css')
+        link(rel='stylesheet',type='text/css',href='./stylesheets/login.css')
+    body
+        div.header
+            img(src="/images/fengmian2.png" class="header-img")
+        div
+
+            form(onsubmit="return ;" class="loginForm")
+                //ul.form-tab
+                //    li(class="active tab-menu") 登录
+                //    li(class="tab-menu") 注册
+                div.form-group
+                    label.labtext 用户名:
+                    <input class="l-name" type="text" id="username" name="username" placeholder="请输入用户名">
+                div.form-group
+                    lable.labtext 密码:
+                    <input class="l-pwd" type="password" id="password" name="password" placeholder="请输入密码">
+                div.login-regist
+                    a 登录
+                div
+                    input(type="button" value="登录" class="submit-btn" id="submit-btn" )
+                a(href="./update" class="updatepwd") 忘记密码?
+
+
+
+
+        script.
+            var btn = document.getElementById('submit-btn');
+            btn.addEventListener('click',function(){
+                submitData();
+            })
+            function submitData(){
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+                var xmlhttp = "";
+                if(window.ActiveXObject){
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }else if(window.XMLHttpRequest){
+                    xmlhttp = new XMLHttpRequest();
+                }
+                console.log('username='+ username + "&password=" + password);
+                xmlhttp.open("post", "/login", true);
+                xmlhttp.onreadystatechange = ajaxCallBack;
+                xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+                xmlhttp.send('username='+ username + "&password=" + password);
+                function ajaxCallBack(){
+                    if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                        var content = JSON.parse(xmlhttp.responseText);
+                        console.log(content);
+                        if(content.statusCode == 200){//注册成功
+                            return ;
+                            location.href='/update.html';
+                        }
+                    }
+                }
+            }
