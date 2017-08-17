@@ -3,7 +3,7 @@ input,textarea{
 }
 body{
     /* Safari 5.1 - 6.0 */
-    background: linear-gradient(to top, #000,#555,#222 ,#000);
+    background: linear-gradient(to top, #f0f0f0,#f0f0f0,#C9C9C9 ,#ccc);
 
 }
 input:-webkit-autofill {

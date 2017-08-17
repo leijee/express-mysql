@@ -1,0 +1,34 @@
+.swiper-container{height: 11rem;padding-bottom: 0;}
+.swiper-container .swiper-wrapper{height: 100%;}
+.swiper-container .swiper-slide img{width: 100%;height: 100%;}
+
+
+.img-wrapper{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.img-wrapper:after{
+    content: '\020';
+    display: block;
+    width: 100%;
+    padding-top: 51.7%;
+    clear: both;
+}
+.img-wrapper img{
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    z-index: 9;
+    background-color: #f7f7f7;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}

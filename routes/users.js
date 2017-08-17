@@ -1,11 +1,12 @@
 var express = require('express');
-var router = express.Router();
-
 var mysql = require('mysql');
 var dbConfig = require('../db/config');
 var dao = require('../dataDao/dao');
-
-
+var tokens = require('../utils/check_token');
+var cheerio = require('cheerio');
+var request = require('request');
+var fs = require('fs');
+var logger = require('../log/logHandle').helper;
 var responseJSON = function(res,ret){
   if(typeof ret === 'undefined'){
     res.json({code:'-200',msg:'操作失败'});
@@ -70,6 +71,13 @@ exports.updatePwd = function(req, res){
         }
     });
 };
+
+function setCrypto(key){
+    var secret = key;
+    var hash  = crypto.createHmac('sha256',secret).update('I love cupcakes').digest('hex');
+    console.log(hash);
+}
+
 exports.login = function(req,res){
     res.setHeader('Content-Type', 'application/json;charset=utf-8');
     console.log(req.body);
@@ -77,40 +85,96 @@ exports.login = function(req,res){
     var password = req.body.password;
     var querysql = "select * from user where username=?";
     var params = username;
+    // setCrypto(password);
+    if(username==''){
+        res.send(sendMessage(204,'用户名不能为空'));
+        return ;
+    }
+    if(password==''){
+        res.send(sendMessage(203,'密码不能为空'));
+        return ;
+    }
+    function sendMessage(code,message,token){
+        return msg = {
+            username:username,
+            message:message,
+            statusCode:code,
+            token:token
+        };
+    }
     //操作数据库
     var queryResult= dao.query(querysql,params,function(result){
         console.log(result);
         var len = result.length;
         var msg = {};
         if(len<1){
-            msg ={
-                username:username,
-                message:'用户'+username+'不存在',
-                statusCode:201
-            }
-            res.send(msg);
+            logger.writeInfo('用户'+username+'不存在');
+            res.send(sendMessage(204,'用户'+username+'不存在'));
         }else{
             if(result[0].password == password){
-                msg ={
-                    username:username,
-                    message:'登录成功',
-                    statusCode:200
-                }
-                console.log('登录成功');
+                var token = tokens.createToken(password,new Date().getTime(),req);
+                var userid = result[0].userid;
+
+                var queryToken = 'select * from token where userid = ?';
+
+                dao.query(queryToken,userid,function(tokenResult){
+                    if(tokenResult.length>0){//token存在.更新token
+                        var updateToken = 'update token set ?';
+                        var primary_date = new Date();
+                        var updateParam = {access_token:token,primary_time:primary_date};
+                        dao.update(updateToken,updateParam,function(){
+                            console.log('修改成功');
+                            req.session.token = token;
+                            msg =sendMessage(200,'登录成功',token);
+                            res.send(msg);
+                        })
+                    }else{//token不存在,添加token
+                        var addToken = 'insert into token set ?';
+                        var primary_date = new Date();
+                        var expire = 10*6000;//10分钟
+                        var addParam = {userid:userid,access_token:token,primary_time:primary_date,expire:expire};
+                        dao.add(addToken,addParam,function(){
+                            console.log('添加成功');
+                            req.session.token = token;
+                            msg =sendMessage(200,'登录成功',token);
+                            res.send(msg);
+                        })
+                    }
+                })
             }else{
-                msg ={
-                    username:username,
-                    message:'密码错误',
-                    statusCode:201
-                }
-                console.log('密码错误');
+                msg =sendMessage(205,'密码错误');
+                res.send(msg);
             }
-            res.send(msg);
+
         }
     });
 }
 
+//获取网站信息
+exports.getWebsiteInfo = function(req,res){
 
+    var website = req.body.website;
+    console.log(website);
+    request(website,function(error,response,body){
+        if (!error && response.statusCode == 200) {
+            //返回的body为抓到的网页的html内容
+            var $ = cheerio.load(body); //当前的$符相当于拿到了所有的body里面的选择器
+            var a = $("#navitems ").find("a");
+            res.send(body);
+
+        }
+    });
+}
+
+function getData(url){
+    request(url,function(error,response,body){
+        getData(url);
+    });
+}
+
+
+
+//微信支付统一下单
 exports.pay = function(){
     var url = "https://api.mch.weixin.qq.com/pay/unifiedorder";
     var appid = 'appid';

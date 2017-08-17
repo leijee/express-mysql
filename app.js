@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var route = require('./routes/route');
 var users = require('./routes/users');
+var session = require('express-session');
 var app = express();
 
 // view engine setup
@@ -14,16 +15,24 @@ app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+    secret:'123456',
+    resave: false,
+    cookie: {maxAge: 60000},
+    saveUninitialized: true,
+}));
 app.use('/', route);
 
 app.post('/regist',users.regist);
 app.post('/updatePwd',users.updatePwd);
 app.post('/login',users.login);
+app.post('/getWebsiteInfo',users.getWebsiteInfo);
 
 
 // catch 404 and forward to error handler

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+    <link rel='stylesheet' type='text/css' href='../stylesheets/ydui.css'>
+    <link rel='stylesheet' type='text/css' href='../stylesheets/style.css'>
+    <link rel='stylesheet' type='text/css' href='../stylesheets/login.css'>
+    <script src="../javascripts/ydui.flexible.js"></script>
+    <title>首页</title>
+</head>
+<body>
+<div class="m-slider" id="J_Slider">
+    <div class="slider-wrapper">
+        <div class="slider-item">
+            <a href="#">
+                <img src="http://static.ydcss.com/uploads/ydui/1.jpg">
+            </a>
+        </div>
+        <div class="slider-item">
+            <a href="#">
+                <img src="http://static.ydcss.com/uploads/ydui/2.jpg">
+            </a>
+        </div>
+        <div class="slider-item">
+            <a href="#">
+                <img src="http://static.ydcss.com/uploads/ydui/3.jpg">
+            </a>
+        </div>
+    </div>
+    <div class="slider-pagination"></div><!-- 分页标识 -->
+</div>
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="../javascripts/ydui.js"></script>
+<script>
+    $('#J_Slider').slider({
+        speed: 200,
+        autoplay: 2000,
+        lazyLoad: true
+    });
+</script>
+</html>

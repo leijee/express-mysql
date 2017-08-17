@@ -1,0 +1,9 @@
+{
+  "appenders": {
+    "out": {"type": "console"},
+    "default": { "type": "dateFile", "filename": "logs/task","pattern":"-dd.log", "alwaysIncludePattern":true }
+  },
+  "categories": {
+    "default": { "appenders": ["out","default"], "level": "info" }
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel='stylesheet' href='./stylesheets/ydui.css'>
+    <link rel='stylesheet' href='./stylesheets/style.css'>
+    <link rel='stylesheet' href='./stylesheets/index.css'>
+    <link rel="stylesheet" href="./stylesheets/getinfo.css">
+    <script src="./javascripts/ydui.flexible.js"></script>
+    <title>获取网站信息</title>
+
+</head>
+<body>
+    <header class="m-navbar">
+        <a href="javascript:void(0);" class="navbar-item back-page">
+            <i class="back-ico"></i>
+        </a>
+        <div class="navbar-center">
+            <span class="navbar-title">获取网站信息</span>
+        </div>
+        <div class="navbar-item">
+            <a href="javascript:void(0);" class="login-page">
+                <i class="icon-ucenter-outline"></i>
+            </a>
+        </div>
+    </header>
+    <div class="getWebsiteInfo">
+        <input type="text" id="website" class="website" placeholder="请输入网站地址" autofocus>
+        <div id="getInfo" class="btn-getInfo">获取信息</div>
+    </div>
+
+
+
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="./javascripts/ydui.js"></script>
+
+<script>
+    ;$(function(){
+        var btn = document.getElementById('getInfo');
+        btn.addEventListener('click',function(){
+            submitData();
+        })
+        function submitData(){
+            var website = document.getElementById('website').value;
+            var xmlhttp = "";
+            if(window.ActiveXObject){
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }else if(window.XMLHttpRequest){
+                xmlhttp = new XMLHttpRequest();
+            }
+            console.log('website='+ website);
+            xmlhttp.open("post", "/getWebsiteInfo", true);
+            xmlhttp.onreadystatechange = ajaxCallBack;
+            xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+            xmlhttp.send('website='+ website);
+            function ajaxCallBack(){
+                if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+//                    var content = JSON.parse(xmlhttp.responseText);
+                    console.log(xmlhttp.responseText);
+//                    if(content.statusCode == 200){//登录成功
+//                        /* 调用3(不带图标)： */
+//                        YDUI.dialog.toast('获取成功', 'none',200,function () {
+//
+//                        });
+//                    }else{
+//                        YDUI.dialog.notify(content.message, 2000, function(){
+//                            console.log('获取失败');
+//                        });
+//                    }
+                }else{
+                    console.log('error');
+                }
+            }
+        }
+
+
+
+
+    });
+
+
+</script>
+
+</html>

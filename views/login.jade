@@ -3,10 +3,12 @@
 doctype html
 html
     head
-        title= 登录
+        title 登录
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
-        link(rel='stylesheet',type='text/css',href='./stylesheets/style.css')
-        link(rel='stylesheet',type='text/css',href='./stylesheets/login.css')
+        link(rel='stylesheet',type='text/css',href='/stylesheets/ydui.css')
+        link(rel='stylesheet',type='text/css',href='/stylesheets/style.css')
+        link(rel='stylesheet',type='text/css',href='/stylesheets/login.css')
+        script(src='/javascripts/ydui.flexible.js')
     body
         div.header
             img(src="/images/fengmian2.png" class="header-img")
@@ -18,19 +20,19 @@ html
                 //    li(class="tab-menu") 注册
                 div.form-group
                     label.labtext 用户名:
-                    <input class="l-name" type="text" id="username" name="username" placeholder="请输入用户名">
+                    <input class="l-name" type="text" id="username" name="username" placeholder="请输入用户名" autofocus="true">
                 div.form-group
                     lable.labtext 密码:
                     <input class="l-pwd" type="password" id="password" name="password" placeholder="请输入密码">
                 div.login-regist
-                    a 登录
+                    a 注册
                 div
-                    input(type="button" value="登录" class="submit-btn" id="submit-btn" )
+                    input(type="button" value="登录" class="btn-block btn-primary"  id="submit-btn" )
                 a(href="./update" class="updatepwd") 忘记密码?
 
 
-
-
+        script(src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js')
+        script(src='/javascripts/ydui.js')
         script.
             var btn = document.getElementById('submit-btn');
             btn.addEventListener('click',function(){
@@ -54,10 +56,21 @@ html
                     if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
                         var content = JSON.parse(xmlhttp.responseText);
                         console.log(content);
-                        if(content.statusCode == 200){//注册成功
-                            return ;
-                            location.href='/update.html';
+                        if(content.statusCode == 200){//登录成功
+                            /* 调用3(不带图标)： */
+                            YDUI.dialog.toast('登录成功', 'none',200,function () {
+                                YDUI.util.sessionStorage.set('loginFlag','true');
+                                YDUI.util.localStorage.set('token',content.token);
+                                location.href = '/index.html';
+
+                            });
+                        }else{
+                            YDUI.dialog.notify(content.message, 1000, function(){
+                                console.log('登录失败');
+                            });
                         }
+                    }else{
+                        console.log('error');
                     }
                 }
             }
