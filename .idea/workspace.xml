@@ -1,27 +1,460 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff62f926-6828-4d48-bc00-35210904557c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/log4js.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/logHandle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/getInfo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/page/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/getinfo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/check_token.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/userInfo.jade" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/commonHead.jade" afterPath="" />
+    <list default="true" id="ff62f926-6828-4d48-bc00-35210904557c" name="Default" comment="添加文件上传功能">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part6" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/uploads/1seiKtzFRxNfTIJuA184ZlPa.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/uploads/HrGGpTKPGY1Pj2CJ561D7EQP.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/uploads/JmoJZXvO03_4NGowFt62Q1xd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/uploads/Q3tAmsGUZdcj91Svu03kONdk.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/uploads/Qr9o-RlBoOw6V72SjJ8C6-S2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/uploads/S7hVF6T30q0EILnwXF3bo9hp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/uploads/WpcQqVQ4ccV5mz7Mdy5tRbnq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/uploads/_hrJ7inkOjRib22Ke5MI9pId.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/uploads/r3pLa0ttfOGn5ep0F6NzbXa4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/uploads/tsCHkYNhuXK17QzXm6NRgHal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/uploads/zKkwEBQPlQgMEc80aZGOXer2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/extern/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/include.pyc0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/misc.pyc0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/klonk-alternate-skeleton.rc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/klonk.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/Inked粘贴图片(1)_LI.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/avatar04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/avatar5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/buhuo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/favicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/files1-3449c9e5e332f1dbb81505cd739fbf3f.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/files1-3449c9e5e332f1dbb81505cd739fbf3f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/lADOkpopgszGzMI_194_198.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/share.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/task-01.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/task-18.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/task-21.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/task-28.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/task-29.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/task-30.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/task-31.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/append-field/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/append-field/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/append-field/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/append-field/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/append-field/lib/parse-path.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/append-field/lib/set-value.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/append-field/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/append-field/test/forms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/busboy/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/busboy/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/busboy/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/busboy/deps/encoding/encoding-indexes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/busboy/deps/encoding/encoding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/busboy/lib/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/busboy/lib/types/multipart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/busboy/lib/types/urlencoded.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/busboy/lib/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/busboy/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/busboy/test/test-types-multipart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/busboy/test/test-types-urlencoded.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/busboy/test/test-utils-decoder.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/busboy/test/test-utils-parse-params.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/busboy/test/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/charenc/LICENSE.mkd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/charenc/README.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/charenc/charenc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/charenc/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/isarray/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/isarray/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/isarray/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/isarray/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/isarray/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/isarray/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/isarray/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/isarray/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/GOVERNANCE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/doc/wg-meetings/2015-01-30.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/duplex-browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/duplex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/lib/_stream_duplex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/lib/_stream_passthrough.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/lib/_stream_readable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/lib/_stream_transform.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/lib/_stream_writable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/lib/internal/streams/BufferList.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/lib/internal/streams/destroy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/lib/internal/streams/stream-browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/lib/internal/streams/stream.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/passthrough.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/readable-browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/readable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/transform.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/writable-browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/writable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/safe-buffer/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/safe-buffer/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/safe-buffer/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/safe-buffer/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/safe-buffer/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/safe-buffer/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/string_decoder/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/string_decoder/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/string_decoder/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/string_decoder/lib/string_decoder.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/node_modules/string_decoder/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/concat-stream/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/crypt/LICENSE.mkd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/crypt/README.mkd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/crypt/crypt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/crypt/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/bench/dicer-bench-multipart-parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/bench/formidable-bench-multipart-parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/bench/multipartser-bench-multipart-parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/bench/multiparty-bench-multipart-parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/bench/parted-bench-multipart-parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/bench/parted-multipart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/lib/Dicer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/lib/HeaderParser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/lib/PartStream.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/original" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part1.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part2.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part3.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part4.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part5.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part6" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part6.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part7.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-wrongboundary/original" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-wrongboundary/preamble" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-wrongboundary/preamble.error" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/original" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part1.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part2.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part3.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part4.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part5.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part6.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part7" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part7.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/original" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/part1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/part1.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/part2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/part2.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/preamble.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested/original" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested/part1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested/part1.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested/part2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested/part2.header" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/test-endfinish.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/test-headerparser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/test-multipart-extra-trailer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/test-multipart-nolisteners.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/test-multipart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/dicer/test/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fd-slicer/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fd-slicer/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fd-slicer/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fd-slicer/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fd-slicer/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fd-slicer/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fd-slicer/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fd-slicer/test/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/md5/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/md5/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/md5/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/md5/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/md5/md5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/md5/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/md5/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multer/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multer/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multer/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multer/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multer/lib/counter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multer/lib/file-appender.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multer/lib/make-error.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multer/lib/make-middleware.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multer/lib/remove-uploaded-files.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multer/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multer/storage/disk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multer/storage/memory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multiparty/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multiparty/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multiparty/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multiparty/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multiparty/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/multiparty/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/object-assign/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/object-assign/license" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/object-assign/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/object-assign/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/pend/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/pend/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/pend/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/pend/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/pend/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/streamsearch/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/streamsearch/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/streamsearch/lib/sbmh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/streamsearch/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/typedarray/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/typedarray/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/typedarray/example/tarray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/typedarray/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/typedarray/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/typedarray/readme.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/typedarray/test/server/undef_globals.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/typedarray/test/tarray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/regist.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/PRESUBMIT.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/codereview.settings" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/clique.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/clique_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/constants.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/exception.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/extern/BogoFP.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/extern/FP.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/extern/tclib.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/android_xml.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/android_xml_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/c_format.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/c_format_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/chrome_messages_json.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/chrome_messages_json_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/data_pack.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/data_pack_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/html_inline.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/html_inline_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/js_map_format.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/js_map_format_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/PRESUBMIT.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/policy_template_generator.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/policy_template_generator_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/template_formatter.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writer_configuration.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/adm_writer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/adm_writer_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/adml_writer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/adml_writer_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/admx_writer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/admx_writer_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/doc_writer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/doc_writer_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/json_writer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/json_writer_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/mock_writer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/plist_helper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/plist_strings_writer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/plist_strings_writer_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/plist_writer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/plist_writer_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/reg_writer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/reg_writer_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/template_writer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/template_writer_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/writer_unittest_common.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/xml_formatted_writer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/policy_templates/writers/xml_writer_base_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/rc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/rc_header.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/rc_header_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/rc_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/repack.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/resource_map.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/format/resource_map_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/admin_template.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/admin_template_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/chrome_html.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/chrome_html_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/chrome_scaled_image.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/chrome_scaled_image_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/igoogle_strings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/igoogle_strings_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/interface.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/json_loader.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/muppet_strings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/muppet_strings_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/policy_json.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/policy_json_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/rc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/rc_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/regexp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/skeleton_gatherer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/tr_html.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/tr_html_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/txt.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/gather/txt_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/grd_reader.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/grd_reader_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/grit-todo.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/grit_runner.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/grit_runner_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/lazy_re.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/lazy_re_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/base_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/custom/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/custom/filename.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/custom/filename_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/empty.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/include.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/include_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/io.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/io_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/mapping.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/message.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/message_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/misc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/misc_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/structure.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/structure_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/node/variant.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/pseudo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/pseudo_rtl.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/pseudo_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/scons.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/shortcuts.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/shortcuts_unittests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tclib.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tclib_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/test_suite_all.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/GoogleDesktop.adm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/about.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/android.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/bad_browser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/browser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/buildinfo.grd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/cache_prefix.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/cache_prefix_file.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/chat_result.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/chrome/app/generated_resources.grd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/chrome_html.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/del_footer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/del_header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/deleted.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/details.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/duplicate-name-input.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/email_result.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/email_thread.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/error.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/explicit_web.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/footer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/generated_resources_fr.xtb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/homepage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/hover.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/include_test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/included_sample.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/indexing_speed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/install_prefs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/install_prefs2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/klonk.rc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/ko_oem_enable_bug.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/ko_oem_non_admin_bug.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/mini.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/oem_enable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/oem_non_admin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/onebox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/oneclick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/password.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/preferences.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/privacy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/quit_apps.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/recrawl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/resource_ids" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/script.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/searchbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/sidebar_h.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/sidebar_v.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/simple-input.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/simple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/source.rc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/status.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/structure_variables.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/substitute.grd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/substitute.xmb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/time_related.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/toolbar_about.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/tools/grit/resource_ids" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/transl.rc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/testdata/versions.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/android2grd.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/android2grd_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/build.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/build_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/buildinfo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/buildinfo_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/count.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/diff_structures.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/interface.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/menu_from_parts.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/newgrd.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/postprocess_interface.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/postprocess_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/preprocess_interface.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/preprocess_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/rc2grd.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/rc2grd_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/resize.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/toolbar_postprocess.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/toolbar_preprocess.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/transl2tc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/transl2tc_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/unit.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/xmb.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/tool/xmb_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/util.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/util_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/xtb_reader.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit/xtb_reader_unittest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/grit/grit_info.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/make_grd.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/uploadFile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/config.js" afterPath="$PROJECT_DIR$/db/config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/login.css" afterPath="$PROJECT_DIR$/public/stylesheets/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/route.js" afterPath="$PROJECT_DIR$/routes/route.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/ydui.js" afterPath="$PROJECT_DIR$/public/javascripts/ydui.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/users.js" afterPath="$PROJECT_DIR$/routes/users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/login.jade" afterPath="$PROJECT_DIR$/views/login.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/userInfo.jade" afterPath="$PROJECT_DIR$/views/userInfo.jade" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,9 +475,41 @@
       <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-625">
-              <caret line="92" column="21" lean-forward="true" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+            <state relative-caret-position="50">
+              <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="regist.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/regist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uploadFile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/uploadFile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,48 +517,28 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="39" column="35" lean-forward="true" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+            <state relative-caret-position="800">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userInfo.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/userInfo.jade">
+      <file leaf-file-name="error.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/error.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="25">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/login.jade">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="55" column="73" lean-forward="true" selection-start-line="55" selection-start-column="73" selection-end-line="55" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logHandle.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/logHandle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4js.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/log4js.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="325">
+              <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -102,29 +547,31 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state relative-caret-position="450">
+              <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="route.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="route.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/route.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+            <state relative-caret-position="350">
+              <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/page/index.html">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="6300">
+              <caret line="252" column="57" lean-forward="false" selection-start-line="252" selection-start-column="57" selection-end-line="252" selection-end-column="57" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#acticle#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,26 +585,18 @@
         <option value="Jade File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="tsconfig.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rout</find>
-      <find>dao</find>
-      <find>responseJSON</find>
-      <find>connection</find>
-      <find>length</find>
-      <find>font-family</find>
-      <find>submit-btn</find>
       <find>sendMessage</find>
       <find>localStorage</find>
       <find>storage</find>
       <find>toLink</find>
       <find>YDUI</find>
-      <find>back-page</find>
       <find>router</find>
       <find>express</find>
       <find>setCrypto</find>
@@ -175,6 +614,14 @@
       <find>”</find>
       <find>appenders</find>
       <find>customDefaultAtt:</find>
+      <find>bodyParser</find>
+      <find>path</find>
+      <find>back-page</find>
+      <find>错误</find>
+      <find>uploadPath</find>
+      <find>originalname</find>
+      <find>upload</find>
+      <find>uploadFile</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -187,7 +634,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/routes/login.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/db/usersql.js" />
         <option value="$PROJECT_DIR$/views/error.jade" />
@@ -201,23 +647,27 @@
         <option value="$PROJECT_DIR$/public/stylesheets/login.css" />
         <option value="$PROJECT_DIR$/db/config.js" />
         <option value="$PROJECT_DIR$/public/page/index.html" />
-        <option value="$PROJECT_DIR$/views/userInfo.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/common.css" />
         <option value="$PROJECT_DIR$/public/javascripts/common.js" />
         <option value="$PROJECT_DIR$/utils/check_token.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/index.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/getinfo.css" />
         <option value="$PROJECT_DIR$/public/getInfo.html" />
         <option value="$PROJECT_DIR$/views/commonHead.jade" />
         <option value="$PROJECT_DIR$/utils/logHandle.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/ydui.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/route.js" />
-        <option value="$PROJECT_DIR$/routes/users.js" />
         <option value="$PROJECT_DIR$/log/logHandle.js" />
         <option value="$PROJECT_DIR$/log/log4js.json" />
         <option value="$PROJECT_DIR$/views/login.jade" />
+        <option value="$PROJECT_DIR$/public/javascripts/ydui.js" />
+        <option value="$PROJECT_DIR$/views/userInfo.jade" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/pages/upLoad.html" />
+        <option value="$PROJECT_DIR$/utils/uploadFile.js" />
+        <option value="$PROJECT_DIR$/routes/users.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/regist.html" />
       </list>
     </option>
   </component>
@@ -253,7 +703,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -276,55 +726,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="express-mysql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="express-mysql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="express-mysql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="express-mysql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="express-mysql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="express-mysql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log" />
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,14 +745,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\leijie\test\express-mysql\log" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\leijie\test\express-mysql\public" />
       <recent name="D:\leijie\test\express-mysql\public\stylesheets" />
       <recent name="D:\leijie\test\express-mysql\public\javascripts" />
       <recent name="D:\leijie\test\express-mysql\public\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\leijie\test\express-mysql\log" />
     </key>
   </component>
   <component name="RunManager">
@@ -438,33 +846,40 @@
       <workItem from="1501117612935" duration="1211000" />
       <workItem from="1501204110503" duration="1206000" />
       <workItem from="1502934120097" duration="19385000" />
+      <workItem from="1503914528390" duration="60000" />
+      <workItem from="1503973972881" duration="11327000" />
+      <workItem from="1504056568914" duration="18501000" />
+      <workItem from="1504141794300" duration="10211000" />
+      <workItem from="1504228174207" duration="3435000" />
+      <workItem from="1504510839286" duration="516000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135527000" />
+    <option name="totallyTimeSpent" value="179577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1797694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22903565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20106383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20106383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,6 +888,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加文件上传功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加文件上传功能" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="2" />
@@ -480,47 +899,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataDao/dao.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/login.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,7 +974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -617,13 +998,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/common.pug" />
-    <entry file="file://$PROJECT_DIR$/views/error.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -647,24 +1021,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/common.css" />
-    <entry file="file://$PROJECT_DIR$/public/javascripts/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/update.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="14" column="53" lean-forward="false" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -700,7 +1060,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2850">
           <caret line="114" column="1" lean-forward="false" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -708,15 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6200">
-          <caret line="248" column="27" lean-forward="false" selection-start-line="248" selection-start-column="27" selection-end-line="248" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,9 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="625">
           <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -734,7 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,7 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -750,49 +1095,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/commonHead.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/userInfo.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/ydui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="1987" column="0" lean-forward="true" selection-start-line="1987" selection-start-column="0" selection-end-line="1987" selection-end-column="0" />
-          <folding>
-            <marker date="1502944651761" expanded="true" signature="56514:56521" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/views/commonHead.jade" />
     <entry file="file://$PROJECT_DIR$/log/logHandle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="300">
           <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -800,38 +1110,130 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/login.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="55" column="73" lean-forward="true" selection-start-line="55" selection-start-column="73" selection-end-line="55" selection-end-column="73" />
+        <state relative-caret-position="1375">
+          <caret line="55" column="73" lean-forward="false" selection-start-line="55" selection-start-column="73" selection-end-line="55" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/ydui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98600">
+          <caret line="3944" column="75" lean-forward="false" selection-start-line="3944" selection-start-column="75" selection-end-line="3944" selection-end-column="75" />
+          <folding>
+            <marker date="1503977235580" expanded="true" signature="56514:56521" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/userInfo.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/error.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/upLoad.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="19" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploads/files1-3449c9e5e332f1dbb81505cd739fbf3f.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploads/files1-3449c9e5e332f1dbb81505cd739fbf3f.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/uploadFile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6300">
+          <caret line="252" column="57" lean-forward="false" selection-start-line="252" selection-start-column="57" selection-end-line="252" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#acticle#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-625">
-          <caret line="92" column="21" lean-forward="true" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+        <state relative-caret-position="50">
+          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/db/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="39" column="35" lean-forward="true" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+        <state relative-caret-position="225">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/route.js">
+    <entry file="file://$PROJECT_DIR$/public/regist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        <state relative-caret-position="225">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
           <folding />
         </state>
       </provider>

@@ -29,6 +29,11 @@ app.use(session({
 }));
 app.use('/', route);
 
+
+app.post('/uploadFile',users.uploadFile);
+// app.post('/ajaxUpload',upload.single('files1'),users.ajaxUpload);
+
+app.post('/ajaxUpload', users.ajaxUpload)
 app.post('/regist',users.regist);
 app.post('/updatePwd',users.updatePwd);
 app.post('/login',users.login);

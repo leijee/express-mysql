@@ -9,6 +9,13 @@ html
         <link rel='stylesheet' type='text/css' href='./stylesheets/style.css'>
         <link rel='stylesheet' type='text/css' href='./stylesheets/login.css'>
         <script src="./javascripts/ydui.flexible.js"></script>
+        style.
+            .m-navbar:after{
+                content:'';
+                display:block;
+                clear: both;
+            }
+
     body
         header.m-navbar
             a(href="javascript:void(0);",class="navbar-item back-page")
@@ -18,7 +25,9 @@ html
             div.navbar-item
                 a(href="javascript:void(0);",class="login-page")
                     i.icon-ucenter-outline
-
+            div.userImg
+                img(src="/fengmian.png",alt="头像")
+                span.chooseImg '选择头像'
     script(src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js')
     script(src='/javascripts/ydui.js')
     script.

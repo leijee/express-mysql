@@ -3950,10 +3950,7 @@
     $.fn.sendCode = Plugin;
     //返回上一页
     window.backPage = function() {
-        $('.back-page').on("click", function () {
-
-            // location.href="/index.jade";
-
+        $('.back-page .back-ico').on("click", function () {
             console.log('back');
             history.go(-1);
         })

@@ -7,6 +7,13 @@ var cheerio = require('cheerio');
 var request = require('request');
 var fs = require('fs');
 var logger = require('../log/logHandle').helper;
+var multiparty = require('multiparty');
+var util = require('util');
+var path = require('path');
+
+var uploadFile = require('../utils/uploadFile');
+
+
 var responseJSON = function(res,ret){
   if(typeof ret === 'undefined'){
     res.json({code:'-200',msg:'操作失败'});
@@ -77,6 +84,72 @@ function setCrypto(key){
     var hash  = crypto.createHmac('sha256',secret).update('I love cupcakes').digest('hex');
     console.log(hash);
 }
+
+exports.uploadFile = function (req,res) {
+    var form = new multiparty.Form();
+    // res.setHeader('text/plain');
+    var msg = {info:'',img:''};
+    console.log(__dirname);
+    form.encoding = 'utf-8';
+    form.uploadDir = __dirname+"/uploads";
+
+    //设置单文件大小限制
+    form.maxFilesSize = 2 * 1024 * 1024;
+    //form.maxFields = 1000;  设置所以文件的大小总和
+    form.parse(req, function(err, fields, files) {
+        if(err){
+            console.log('错误');
+            msg.info = '上传失败';
+            res.send(msg);
+            return ;
+        }
+        console.log(files.files[0].originalFilename);
+        msg.img=path.join(__dirname,'/uploads/'+files.files[0].originalFilename);
+        console.log(msg.img);
+        msg.info = '上传成功'
+        msg.len = files.length;
+        res.writeHead(200,{"Content-type":"text/html;charset=UTF-8"});
+        res.end(JSON.stringify(msg));
+    });
+}
+
+//使用ajax文件上传
+exports.ajaxUpload = function (req,res) {
+    console.log(req.busboy);
+    console.log(req.protocol);
+    console.log(req.host);
+    if(req.busboy){
+        console.log(req.busboy);
+    }
+
+    var upload = uploadFile.single('files1');
+
+
+
+
+
+    upload(req, res, function (err) {
+        if (err) {
+            console.log(err);
+            // An error occurred when uploading
+            return
+        }
+        //req.body ajax提交的非文件数据
+        //req.body.username //提交参数 username
+        //req.file.fieldname 上传文件 input file  name字段名称
+        //req.file.filename 上传文件 文件名
+        //req.file.originalname 上传文件 文件名
+        //req.file.mimetype 上传文件类型
+        //req.file.size 上传文件大小
+        //req.file.destination 上传文件存在的路径
+        //req.file.path 上传文件的 路径
+        console.log(req.file.path);
+        var readFile = fs.readFileSync(req.file.path,'binary');
+        res.send({msg:'上传成功',img:req.file.path});
+        // Everything went fine
+    })
+}
+
 
 exports.login = function(req,res){
     res.setHeader('Content-Type', 'application/json;charset=utf-8');

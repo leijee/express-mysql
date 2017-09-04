@@ -237,7 +237,31 @@
                 </div>
             </a>
         </article>
+        <acticle>
+            <!--<form action="/uploadFile" method="post" enctype="multipart/form-data">-->
+                <!--<input type="file" class="files" id="files" name="files">-->
+                <!--<input type="submit" class="uploadFile" value="文件上传">-->
+            <!--</form>-->
 
+            <!--<form action="/ajaxUpload" enctype="multipart/form-data" method="post" class="upload-cont">-->
+                <!--<input type="file" name="files1" class="files1">-->
+                <!--<input type="text" name="username">-->
+                <!--<input type="submit" class="uploadBtn" value="点击上传">-->
+            <!--</form>-->
+
+            <form enctype="multipart/form-data" method="post" class="upload-cont">
+                <input type="file" name="files1" class="files1">
+                <input type="text" name="username" class="username">
+                <br>
+                <input type="button" class="uploadBtn" value="点击上传">
+            </form>
+
+            <div>
+                <img src=""  class="showImg" style="display: none;width: 3rem;height: 3rem">
+            </div>
+
+
+        </acticle>
     </section>
 </div>
 
@@ -282,6 +306,37 @@
         var l = new Login();
         l.toLogin();
         $('img.lazy').lazyLoad();
+
+        $(".files1").on("change",function(e){
+            var e = e || window.event;
+            var files = e.target.files;
+            var file = files[0];
+
+            //文件上传
+            $(".uploadBtn").off("click").on("click",function(){
+                var username = $('.username').val();
+                var formData = new FormData();
+                formData.append('files1',file);
+                formData.append('username',username);
+                console.log(file);
+                $.ajax({
+                    url: "/ajaxUpload",
+                    type: "post",
+                    data:formData,
+                    contentType: false,
+                    processData: false,
+                    success: function(res){
+                        console.log(res);
+                        $(".showImg").attr("src",res.img).css("display","block");
+                    },
+                    error:function(err){
+                        console.log(err);
+                    }
+                });
+            })
+        })
+
+
     }(window));
 
 
