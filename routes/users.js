@@ -115,19 +115,10 @@ exports.uploadFile = function (req,res) {
 
 //使用ajax文件上传
 exports.ajaxUpload = function (req,res) {
-    console.log(req.busboy);
-    console.log(req.protocol);
-    console.log(req.host);
     if(req.busboy){
         console.log(req.busboy);
     }
-
     var upload = uploadFile.single('files1');
-
-
-
-
-
     upload(req, res, function (err) {
         if (err) {
             console.log(err);

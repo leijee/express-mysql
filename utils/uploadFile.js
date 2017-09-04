@@ -4,8 +4,6 @@
 var multer = require('multer');
 var md5 = require('md5');
 
-console.log('进来了');
-
 var uploadPath = process.cwd()+'/uploads';
 console.log(uploadPath);
 var storage = multer.diskStorage({

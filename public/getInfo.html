@@ -59,27 +59,13 @@
             xmlhttp.send('website='+ website);
             function ajaxCallBack(){
                 if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
-//                    var content = JSON.parse(xmlhttp.responseText);
                     console.log(xmlhttp.responseText);
-//                    if(content.statusCode == 200){//登录成功
-//                        /* 调用3(不带图标)： */
-//                        YDUI.dialog.toast('获取成功', 'none',200,function () {
-//
-//                        });
-//                    }else{
-//                        YDUI.dialog.notify(content.message, 2000, function(){
-//                            console.log('获取失败');
-//                        });
-//                    }
+
                 }else{
                     console.log('error');
                 }
             }
         }
-
-
-
-
     });
 
 
