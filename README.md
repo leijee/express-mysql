@@ -1,9 +1,9 @@
 # node+express+mysql 项目
 
-##安装，配置
-####1.nodejs安装
+## 安装，配置
+#### 1.nodejs安装
 nodejs 下载路径 [http://nodejs.cn/download/](http://nodejs.cn/download/ "nodejs下载地址")
-####2.安装express
+#### 2.安装express
 express 官方安装教程 [https://expressjs.com/zh-cn/starter/installing.html](https://expressjs.com/zh-cn/starter/installing.html "express官方安装教程")
 
 - npm install -g express-generator #需先安装express-generator  
@@ -16,10 +16,10 @@ express 官方安装教程 [https://expressjs.com/zh-cn/starter/installing.html]
 页面显示 Welcome to Express 时，说明express安装成功
 
 
-####3.安装mysql
+#### 3.安装mysql
 npm install mysql -save
 
-####4.mysql 配置使用
+#### 4.mysql 配置使用
 mysql配置文件 config.js
 
 ![](https://i.imgur.com/MJpoG3N.png)
@@ -33,10 +33,10 @@ mysql查询方法操作  <br>
   `dao.query(querysql,params,function(result){`
     	`console.log('查询方法');`
   `});`
-##功能实现
+## 功能实现
 
 ### 1.登录功能
-######/login api的实现
+###### /login api的实现
 在app.js文件中
 
 app.post('/login',function(req,res){//采用ajax post方式提交请求
