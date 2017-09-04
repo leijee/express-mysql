@@ -1,4 +1,4 @@
-#node+express+mysql 项目
+# node+express+mysql 项目
 
 ##安装，配置
 ####1.nodejs安装
@@ -21,8 +21,11 @@ npm install mysql -save
 
 ####4.mysql 配置使用
 mysql配置文件 config.js
+
 ![](https://i.imgur.com/MJpoG3N.png)
+
 mysql对增删改查的封装 dao.js
+
 ![](https://i.imgur.com/KCQTiHL.png)
 
 mysql查询方法操作  <br>
