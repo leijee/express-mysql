@@ -236,6 +236,22 @@ function getData(url){
     });
 }
 
+exports.getInfo = function(req,res){
+    res.setHeader('Content-Type', 'application/json;charset=utf-8');
+    var datas = {
+        test:1,
+        msg:'hello world',
+        dataList:[
+            {name:'小米',img:''},
+            {name:'华为',img:''},
+            {name:'一加',img:''},
+            {name:'魅族',img:''},
+            {name:'三星',img:''}
+        ]
+    }
+    res.status(200).send(datas);
+}
+
 
 
 //微信支付统一下单

@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var route = require('./routes/route');
 var users = require('./routes/users');
+var allow_origin = require('./utils/allowOrigin');
 var session = require('express-session');
 var app = express();
 
@@ -28,8 +29,15 @@ app.use(session({
     saveUninitialized: true,
 }));
 app.use('/', route);
-
-
+var allow = allow_origin("http://localhost:8080");
+console.log('请求源url'+allow);
+app.all('*', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", allow);
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+    res.header("X-Powered-By",' 3.2.1')
+    next();
+});
 app.post('/uploadFile',users.uploadFile);
 // app.post('/ajaxUpload',upload.single('files1'),users.ajaxUpload);
 
@@ -38,6 +46,8 @@ app.post('/regist',users.regist);
 app.post('/updatePwd',users.updatePwd);
 app.post('/login',users.login);
 app.post('/getWebsiteInfo',users.getWebsiteInfo);
+app.post('/getInfo',users.getInfo);
+
 
 
 // catch 404 and forward to error handler
